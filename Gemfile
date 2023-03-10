@@ -58,3 +58,12 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'wdm', '>= 0.1.0', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem "net-http"
+
+gem 'devise'
+
+gem 'bootstrap', '~> 4.6.0'
+gem 'jquery-rails'
+
+
+# 環境変数を使用できる
+gem 'dotenv-rails'
