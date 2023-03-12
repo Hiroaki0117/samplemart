@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(version: 2023_03_09_015740) do
     t.string "name"
     t.text "description"
     t.integer "price"
-    t.integer "category_id", null: false
+    t.integer "category_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["category_id"], name: "index_products_on_category_id"
