@@ -15,5 +15,7 @@ Rails.application.routes.draw do
     delete "logout", :to => "users/sessions#destroy"
   end
 
-  resources :products
+  resources :products do
+    resources :reviews, only: [:create]
+  end
 end
