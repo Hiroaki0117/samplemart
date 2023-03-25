@@ -67,3 +67,11 @@ gem 'jquery-rails'
 
 # 環境変数を使用できる
 gem 'dotenv-rails'
+
+# socialiizatioinを使用できる
+gem 'socialization'
+
+# ページネーションを実装できる
+gem 'kaminari'
+
+   gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :tag => 'v2.19.0'

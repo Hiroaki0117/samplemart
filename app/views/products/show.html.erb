@@ -15,10 +15,9 @@
                 ￥<%= @product.price %>
             </p>
             <hr>
-        
-
+            
             <% if user_signed_in? %>
-                <% form_with model:@product do |f| %>
+                <%= form_with model:@product do |f| %>
                     <%= f.hidden_field :id, value:@product.id %>
                     <%= f.hidden_field :id, value:@product.name %>
                     <%= f.hidden_field :id, value:@product.price %>
@@ -36,8 +35,8 @@
                             <% end %>
                         </div>
                         <div class="col-5">
-                            <%= link_to "#", class:"btn btn-primary w-100" do %>
-                                <i class="fas fa-heart"></i>お気に入り
+                            <%= link_to favorite_product_path, class:"btn btn-primary w-100" do %>
+                                <i class="fa fa-heart"></i><%= current_user.likes?(@product)? "お気に入り解除" : "お気に入り" %>
                             <% end %>
                         </div>
                     </div>

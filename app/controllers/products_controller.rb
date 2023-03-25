@@ -1,8 +1,10 @@
 class ProductsController < ApplicationController
-  before_action :set_product, only: [:show, :edit, :update, :destroy]
+  before_action :set_product, only: [:show, :edit, :update, :destroy, :favorite]
+  PER = 15
 
   def index
-    @products = Product.all
+    @products = Product.page(params[:page]).per(PER)
+
   end
 
   def show
@@ -36,6 +38,11 @@ class ProductsController < ApplicationController
     redirect_to product_url
   end
 
+  def favorite
+    current_user.toggle_like!(@product)
+    redirect_product
+  end
+
   private
     def product_params
       params.require(:product).permit(:name, :description ,:price, :category_id)
@@ -43,5 +50,9 @@ class ProductsController < ApplicationController
 
     def set_product
       @product = Product.find(params[:id])
+    end
+
+    def redirect_product
+      redirect_to product_url @product
     end
 end
