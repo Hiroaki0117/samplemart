@@ -1,0 +1,5 @@
+current directory: /Users/nishimuratakuakira/samuraimart/vendor/bundle/ruby/2.7.0/gems/ruby-debug-ide-0.7.3/ext
+/Users/nishimuratakuakira/.rbenv/versions/2.7.6/bin/ruby mkrf_conf.rb
+
+current directory: /Users/nishimuratakuakira/samuraimart/vendor/bundle/ruby/2.7.0/gems/ruby-debug-ide-0.7.3/ext
+/Users/nishimuratakuakira/.rbenv/versions/2.7.6/bin/ruby -I/Users/nishimuratakuakira/.rbenv/versions/2.7.6/lib/ruby/2.7.0/rubygems -rrubygems /Users/nishimuratakuakira/samuraimart/vendor/bundle/ruby/2.7.0/gems/rake-13.0.6/exe/rake RUBYARCHDIR\=/Users/nishimuratakuakira/samuraimart/vendor/bundle/ruby/2.7.0/extensions/x86_64-darwin-22/2.7.0/ruby-debug-ide-0.7.3 RUBYLIBDIR\=/Users/nishimuratakuakira/samuraimart/vendor/bundle/ruby/2.7.0/extensions/x86_64-darwin-22/2.7.0/ruby-debug-ide-0.7.3
